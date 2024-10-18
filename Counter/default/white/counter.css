@@ -1,0 +1,56 @@
+body { 
+    color: #5E5E5E;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    border: 1px solid #5E5E5E;
+    height: 25px;
+    border-radius: 5px;
+}
+
+button {
+    border: 1px solid #5E5E5E;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    color: #5E5E5E;
+    max-height: 40px;
+    width: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#decrement {
+    border-right: 1px solid #5E5E5E;
+}
+
+#increment {
+    border-left: 1px solid #5E5E5E;
+}
+
+#count {
+    font-size: 20px;
+    padding: 1px 20px;
+    border-radius: 2px;
+    height: 20px;
+    color: #5E5E5E;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+
+
+
+button:hover {
+    background-color: hsla(0, 0%, 25%, 0.762);
+    color: white;
+}
+
+button:active {
+    background-color: hsla(0, 0%, 95%, 0.749);
+    color: hsla(0, 0%, 37%, 0.749);
+}

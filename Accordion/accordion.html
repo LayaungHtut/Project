@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="accordion.css">
+    <script src="accordion.js"></script>
+</head>
+<body>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                    <div class="accordion-content">
+                        <table>
+                            <tr>
+                            <td>
+                                <div class="accordion-content-align">
+                        <div class="accordion-content image"><img src="../img/icons/s-icon/Skill_Blazing_Enlightenment.webp" alt="Skill_Blazing_Enlightenment"></div>
+                            <div class="accordion-content left">
+                                <p>
+                                    Blazing Brilliance
+                                </p>
+                                <p>
+                                    Basic Attack
+                                </p>
+                            </div>
+                        </div>
+                            </td>
+
+                            <td>
+                                <p class="accordion-content right" id="accordion-toggle-1">
+                                    Changli performs up to 4 consecutive attacks, dealing Fusion DMG. After releasing Basic Attack 4, enter True Sight, lasting for 12s.
+                                </p>
+                                
+
+                            
+                            <div id="accordion-more-1">
+
+                                <!-- Basic Attack -->
+
+                                <h4>Basic Attack</h4>
+
+                                <p>
+                                    Changli performs up to 4 consecutive attacks, dealing Fusion DMG. After releasing Basic Attack 4, enter True Sight, lasting for 12s.
+                                </p>
+
+                                <!-- Mid-air Attack -->
+
+                                <h4>Mid-air Attack</h4>
+
+                                <p>
+                                    Changli consumes <a href="https://wutheringwaves.fandom.com/wiki/Stamina">Stamina</a> to perform up to 4 consecutive attacks in mid-air, dealing Fusion DMG. After releasing Mid-Air Attack 4, enter True Sight, lasting for 12s.
+                                </p>
+
+                                <!-- Heavy Attack -->
+
+                                <h4>Heavy Attack</h4>
+
+                                <p>
+                                    Hold Basic Attack on the ground to perform an upward strike at the cost of Stamina, dealing Fusion DMG. Use Basic Attack within a certain time to release Mid-Air Attack 3.
+                                </p>
+
+                                <!-- Mid-air Heavy Attack -->
+
+                                <h4>Mid-air Heavy Attack</h4>
+
+                                <p>
+                                    Shortly after holding Basic Attack in mid-air or using Basic Attack True Sight, use Basic Attack to perform a plunging attack at the cost of Stamina, dealing Fusion DMG. Use Basic Attack within a certain time to release Basic Attack 3.
+                                </p>
+
+                                <!-- Dodge Counter -->
+
+                                <h4>Dodge Counter</h4>
+
+                                <p>
+                                    Use Basic Attack after a successful Dodge to attack the target, dealing Fusion DMG.
+                                </p>
+                            </div>
+                        <button class="accordion-content see-more-btn" onclick="toggleAccordion1()" id="toggle-btn-1">See More</button>
+                        </td>
+                    </tr>
+                    </table>
+                    </div>
+            </div>
+
+            <div class="accordion-item">
+                    <div class="accordion-content">
+                        <table>
+                            <tr>
+                            <td>
+                                <div class="accordion-content-align">
+                        <div class="accordion-content image"><img src="../img/icons/s-icon/Skill_Tripartite_Flames.webp" alt="Skill_Tripartite_Flames"></div>
+                            <div class="accordion-content left">
+                                <p>
+                                    Tripartite Flames
+                                </p>
+                                <p>
+                                    Resonance Skill
+                                </p>
+                            </div>
+                        </div>
+                            </td>
+
+                            <td>
+                                <p class="accordion-content right" id="accordion-toggle-2">
+                                    After releasing Resonance Skill, Changli dashes towards the enemy and enters True Sight, lasting for 12s. In the end, she releases a plunging attack, dealing Fusion DMG. True Sight: Capture has 2 initial attempts and can be used up to 2 times. The number of attempts is increased by 1 every 12s. Can be cast in mid-air.
+                                </p>
+                                
+
+                            
+                            <div id="accordion-more-2">
+
+                                <!-- True Sight: Capture -->
+
+                                <h4>True Sight: Capture</h4>
+
+                                <p>
+                                    After releasing Resonance Skill, Changli dashes towards the enemy and enters True Sight, lasting for 12s. In the end, she releases a plunging attack, dealing Fusion DMG. True Sight: Capture has 2 initial attempts and can be used up to 2 times. The number of attempts is increased by 1 every 12s. Can be cast in mid-air.
+                                </p>
+
+                                <!-- Basic Attack: True Sight – Conquest -->
+
+                                <h4>Basic Attack: True Sight - Conquest</h4>
+
+                                <p>
+                                    When in True Sight, if Changli uses Ground Basic Attack, she releases True Sight: Conquest, dashing towards the enemy and dealing Fusion DMG, considered as Resonance Skill DMG. After releasing True Sight: Conquest, True Sight ends.
+
+                                <!-- Heavy Attack -->
+
+                                <h4>Heavy Attack</h4>
+
+                                <p>
+                                    Hold Basic Attack on the ground to perform an upward strike at the cost of Stamina, dealing Fusion DMG. Use Basic Attack within a certain time to release Mid-Air Attack 3.
+                                </p>
+
+                                <!-- Basic Attack: True Sight – Charge -->
+
+                                <h4>Basic Attack: True Sight - Charge</h4>
+
+                                <p>
+                                    When in True Sight, if Changli jumps or uses Basic Attack in mid-air, she releases True Sight: Charge, dashing towards the enemy and dealing Fusion DMG, considered as Resonance Skill DMG.  After releasing True Sight: Charge, True Sight ends.
+                                </p>
+
+                        
+                            </div>
+                        <button class="accordion-content see-more-btn" onclick="toggleAccordion2()" id="toggle-btn-2">See More</button>
+                        </td>
+                    </tr>
+                    </table>
+                    </div>
+            </div>
+           
+            <div class="accordion-item">
+                    <div class="accordion-content">
+                        <table>
+                            <tr>
+                            <td>
+                                <div class="accordion-content-align">
+                        <div class="accordion-content image"><img src="../img/icons/s-icon/Skill_Radiance_of_Fealty.webp" alt="Skill_Radiance_of_Fealty"></div>
+                            <div class="accordion-content left">
+                                <p>
+                                    Radiance of Fealty
+                                </p>
+                                <p>
+                                    Resonance Liberation
+                                </p>
+                            </div>
+                        </div>
+                            </td>
+
+                            <td>
+                                <p class="accordion-content right" id="accordion-toggle-3">
+                                    Deal Fusion DMG to nearby targets, obtaining 4 stacks of Enflamement, and entering Fiery Feather. Can be cast in mid-air.
+                                </p>
+                                
+
+                            
+                            <div id="accordion-more-3">
+
+                               <p>Deal Fusion DMG to nearby targets, obtaining 4 stacks of Enflamement, and entering Fiery Feather. Can be cast in mid-air.
+                                Fiery Feather</p>
+
+                                <p>·       When Changli releases Heavy Attack Flaming Sacrifice within 10s, her ATK is increased by 25%, after which Fiery Feather ends.</p>
+
+                            </div>
+                        <button class="accordion-content see-more-btn" onclick="toogleAccordion3()" id="toggle-btn-3">See More</button>
+                        </td>
+                    </tr>
+                    </table>
+                    </div>
+            </div>
+           
+
+        </div>
+    
+</body>
+</html>

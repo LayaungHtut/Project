@@ -1,0 +1,124 @@
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid #f0f0f0;
+    border-radius: 15px;
+    height: 100%;
+}
+
+
+.wrapper {
+    max-width: 350px;
+    max-height: 100%;
+    border: 1px solid var(--white-600);
+    
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.background {
+    position: relative;
+    box-sizing: border-box;
+    width: 400px;
+    height: 120px;
+
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 30%, #f0f0f0 40%, #e5e5e5 40%);
+    opacity: 0.6;
+    border-width: 1.5px 1.5px 0px 1.5px;
+
+    box-shadow: 6px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+}
+
+.avatar {
+    position: relative;
+    margin-top: -70px;
+    /* margin-left: calc(50% - 50px); */
+    margin-left: calc(50% - 70px);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 30%, #f0f0f0 40%, #e5e5e5 40%);
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    font: Arial;
+}
+
+.badge .inner-badge {
+    position: relative;
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+     background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 30%, #f0f0f0 40%, #e5e5e5 40%);
+     border-radius: 25px;
+     padding: 10px 40px;
+}
+
+.description  {
+    border: 1px solid black;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.description .inner-description  {
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 7px;
+    padding: 7px;
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 30%, #f0f0f0 40%, #e5e5e5 50%);
+}
+
+.description .inner-description:last-child {
+    width: 50%;
+}
+
+.background::before,
+.avatar::before,
+.inner-badge::before,
+.inner-description::before {
+    top: 0;
+    left: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ 
+    background: linear-gradient(120deg, #e5e5e5 30%, #f0f0f0 30%, #f0f0f0 40%, #e5e5e5 50%);
+    animation: skeleton 10s linear infinite; 
+    border-radius: inherit;
+    z-index: 1;
+}
+
+@keyframes skeleton {
+    0% {
+        background-position: -450px;
+    }
+
+    100% {
+        background-position: 450px 0;
+    }
+}

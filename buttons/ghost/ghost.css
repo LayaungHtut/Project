@@ -1,0 +1,154 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 20px;
+    max-width: 500px;
+}
+
+.dark-container {
+    background-color: #000;
+    text-align: center;
+}
+
+.light-container {
+    text-align: center;
+}
+
+.light-container button {
+    background-color: #fff;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 10px 40px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.dark-container button {
+    background-color: #000;
+}
+
+.dark-container .dark {
+    color: #fff;
+    font-size: 25px;
+}
+
+.dark-container .dark:hover {
+    color: #E3F7EA;
+}
+.dark-container .success {
+    color: #6CDF23;
+    font-size: 25px;
+}
+
+.dark-container .success:hover {
+    color: #5FCA1A;
+}
+.dark-container .warning {
+    color: #F0AD4E;
+    font-size: 25px;
+}
+
+.dark-container .warning:hover {
+    color: #D89C46;
+}
+.dark-container .error {
+    color: #E53935;
+    font-size: 25px;
+}
+
+.dark-container .error:hover {
+    color: #D32F2F;
+}
+.dark-container .primary {
+    color: #8CC4E1;
+    font-size: 25px;
+}
+
+.dark-container .priamry:hover {
+    color: #5AAAD4;
+}
+.dark-container .accent-1 {
+    color: #FFDF33;
+    font-size: 25px;
+}
+
+.dark-container .accent-1:hover {
+    color: #FFD700;
+}
+.dark-container .accent-2 {
+    color: #BBBBBB;
+    font-size: 25px;
+}
+
+.dark-container .accent-2:hover {
+    color: #9E9E9E;
+}
+
+.light-container .light {
+    color: #000000;
+    font-size: 25px;
+}
+
+.light-container .light:hover {
+    color: #1A1A1A;
+}
+
+.light-container .success {
+    color: #5FCA1A;
+    font-size: 25px;
+}
+
+.light-container .success:hover {
+    color: #6CDF23;
+}
+.light-container .warning {
+    color: #D89C46;
+    font-size: 25px;
+}
+
+.light-container .warning:hover {
+    color: #F0AD4E;
+}
+.light-container .error {
+    color: #D32F2F;
+    font-size: 25px;
+}
+
+.light-container .error:hover {
+    color: #E53935;
+}
+.light-container .primary {
+    color: #5AAAD4;
+    font-size: 25px;
+}
+
+.light-container .priamry:hover {
+    color: #8CC4E1;
+}
+.light-container .accent-1 {
+    color: #FFD700;
+    font-size: 25px;
+}
+
+.light-container .accent-1:hover {
+    color: #FFDF33;
+}
+.light-container .accent-2 {
+    color: #9E9E9E;
+    font-size: 25px;
+}
+
+.light-container .accent-2:hover {
+    color: #BBBBBB;
+}

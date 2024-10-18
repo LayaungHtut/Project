@@ -1,0 +1,80 @@
+body {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+
+.combo-box {
+    position: relative;
+    display: inline-block;
+}
+
+.combo-box-button {
+    background-color: #F2F2F2;
+    color: #5E5E5E;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    width: 200px;
+    text-align: left;
+}
+
+.combo-box-button::after {
+    content: '▼';
+    float: right;
+    margin-right: 10px;
+}
+
+.combo-box-button:hover {
+    background-color: rgba(94, 94, 94, 0.345);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F2F2F2;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.dropdown-content label {
+    display: block;
+    
+    color: #5E5E5E;
+    padding: 12px 16px;
+    text-decoration: none;
+   
+}
+
+.dropdown-content label:hover {
+    background-color: rgba(94, 94, 94, 0.345);
+}
+
+.dropdown-contents input {
+    margin-right: 5px;
+}
+
+.combo-box-button:focus {
+    outline: none;
+}
+
+.dropdown-content input[type="checkbox"] {
+    accent-color: black;
+}
+
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}

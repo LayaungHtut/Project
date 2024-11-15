@@ -1,42 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carousel</title>
-    <link rel="stylesheet" href="carousel.css">
-    <script src="carousel.js"></script>
-</head>
-<body>
-    <div class="carousel">
-        <div class="slides">
-
-            <!-- first slide -->
-            <div class="slide active">
-                
-            </div>
-
-            <!-- second slide -->
-            <div class="slide">
-                
-            </div>
-
-            <!-- third slide -->
-            <div class="slide">
-                <h2>Blackshore: To the shore’s end</h2>
-                <p>Learn more about the latest factors, its residents, playable characters and so on....</p>
-                <button class="see-more">See more</button>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="carousel.css" />
+  </head>
+  <body>
+    <div class="slider">
+      <div class="list">
+        <div class="item">
+          <img src="../img/megumi.jpg" alt="" />
         </div>
-
-        <button class="previous" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="next" onclick="changeSlide(1)">&#10095;</button>
-
-        <div class="indicators">
-            <span class="dot active" onclick="setSlide(0)"></span>
-            <span class="dot" onclick="setSlide(1)"></span>
-            <span class="dot" onclick="setSlide(2)"></span>
+        <div class="item">
+          <img src="../img/waguri.png" alt="" />
         </div>
+        <div class="item">
+          <img src="violet.gif" alt="" />
+        </div>
+        <div class="item">
+          <img src="../img/waguri.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="../img/megumi.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+
+      <ul class="dots">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
-</body>
+
+    <script src="carousel.js"></script>
+  </body>
 </html>

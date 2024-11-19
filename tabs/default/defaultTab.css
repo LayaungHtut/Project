@@ -1,0 +1,26 @@
+.nav-bar {
+  display: flex;
+  background-color: #faf9fd;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 10px 70px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  font-size: 16px;
+  transition: all 0.5s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-item:hover {
+  background-color: rgba(237, 236, 236, 1);
+}
+
+.nav-item.active {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}

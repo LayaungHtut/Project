@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: rgba(250, 249, 253, 1);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+nav div, nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div {
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav div img {
+    height: 75px;
+    margin-left: 50px;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+}
+
+nav a {
+    padding: 0 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(102, 102, 102, 1);
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav .active a {
+    color: black; 
+}
